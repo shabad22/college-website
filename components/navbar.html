@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <header id="navbar" class="text-gray-400 bg-gray-900 body-font sticky z-50 top-0">
+    <div class="container mx-auto flex flex-wrap p-5 z-0 flex-col md:flex-row items-center">
+      <a href="/college-website/views/index.php" class="flex title-font font-medium items-center text-gray mb-4 md:mb-0">
+        <img src="../images/logo.png" class="w-32" alt="">
+        <span class="ml-3 text-xl text-rose-500">
+          ਸੰਤ ਮਾਝਾ ਸਿੰਘ ਕਰਮਜੋਤ ਕਾਲਜ ਫਾਰ ਵੂਮੈਨ ਮਿਆਣੀ (ਹੁਸ਼ਿਆਰਪੁਰ) <br>
+          Sant majha Singh Karamjot College for Women <br>
+          <center><span class="text-sm text-gray-500">Miani, Hoshiarpur <br> </span></center> 
+          <center>
+            <span class="text-sm text-gray-500">
+              Affiliated with Punjab University Chandigarh
+            </span>
+          </center>
+        </span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <div class="relative inline-block text-left">
+          <div>
+            <button 
+              id="dropdownBtn1" 
+              type="button" 
+              class="
+                themeBox
+                inline-flex 
+                justify-center 
+                w-full 
+                rounded-md 
+                shadow-sm px-4 py-2 
+                bg-dark text-sm font-medium text-gray-100 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              Admission
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="dropDownElement origin-top-right absolute left-0 mt-2 w-36 rounded-md shadow-lg bg-gray-800 text-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div id="dropdown1" class="py-1 hidden" role="none">
+              <a 
+                href="/college-website/views/admissionRules.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Admission Rules
+              </a>
+              <a 
+                href="/college-website/views/feeRules.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Fee Rules
+              </a>
+              <a 
+                href="/college-website/views/libRules.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Library Rules
+              </a>
+              <a 
+                href="/college-website/views/discipline.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Discipline Rules
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="relative inline-block text-left">
+          <div>
+            <button id="dropdownBtn2" type="button" class="themeBox inline-flex justify-center w-full rounded-md shadow-sm px-4 py-2 bg-dark text-sm font-medium text-gray-100 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              Academic
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="dropDownElement origin-top-right absolute left-0 mt-2 w-36 rounded-md shadow-lg bg-gray-800 text-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div id="dropdown2" class="py-1 hidden" role="none">
+              <a 
+                href="/college-website/views/academic.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Programs
+              </a>
+              <a 
+                href="/college-website/views/syllabus.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Syllabus
+              </a>
+              <a 
+                href="/college-website/views/timetable.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Timetable
+              </a>
+              <a 
+                href="/college-website/views/managerMsg.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Calendar
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="relative inline-block text-left">
+          <div>
+            <button id="dropdownBtn3" type="button" class="themeBox inline-flex justify-center w-full rounded-md shadow-sm px-4 py-2 bg-dark text-sm font-medium text-gray-100 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              About Us
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="dropDownElement origin-top-right absolute left-0 mt-2 w-36 rounded-md shadow-lg bg-gray-800 text-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div id="dropdown3" class="py-1 hidden" role="none">
+              <a href="/college-website/views/presidentMsg.php" class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu">President's Message</a>
+              <a href="/college-website/views/managerMsg.php" class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu">Management's Message</a>
+              <a href="/college-website/views/principalMsg.php" class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu">Principal's Message</a>
+              <a href="/college-website/views/faculty.php" class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu">Faculty</a>
+              <!-- <form method="POST" action="#" role="none">
+                <button type="submit" class="text-red-300 block w-full text-left px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu">Sign out</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+        <div class="relative inline-block text-left">
+          <div>
+            <button id="dropdownBtn4" type="button" class="themeBox inline-flex justify-center w-full rounded-md shadow-sm px-4 py-2 bg-dark text-sm font-medium text-gray-100 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+              Gallery
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <div class="dropDownElement origin-top-right absolute left-0 mt-2 w-36 rounded-md shadow-lg bg-gray-800 text-gray-100 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div id="dropdown4" class="py-1 hidden" role="none">
+              <a 
+                href="/college-website/views/infrastructure.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Infrastructure
+              </a>
+              <a 
+                href="/college-website/views/activites.php" 
+                class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" 
+                role="menuitem" tabindex="-1" id="menu"
+              >
+                Activites
+              </a>
+              <a href="/college-website/views/principalMsg.php" class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu">Principal's Message</a>
+              <a href="/college-website/views/faculty.php" class="text-gray-100 hover:bg-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu">Faculty</a>
+              <!-- <form method="POST" action="#" role="none">
+                <button type="submit" class="text-red-300 block w-full text-left px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu">Sign out</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+        <div class="relative inline-block text-left" id="themeToggle">
+          <button id="sun" class="ml-2">
+            <i class="fa-solid fa-sun" ></i>
+          </button>
+          <button id="moon" class="ml-2 hidden">
+            <i class="fa-solid fa-moon" ></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+</body>
+<script>
+  const dropdownBtn1 = document.querySelector("#dropdownBtn1")
+    const dropdown1 = document.querySelector("#dropdown1")
+    const dropdownBtn2 = document.querySelector("#dropdownBtn2")
+    const dropdown2 = document.querySelector("#dropdown2")
+    const dropdownBtn3 = document.querySelector("#dropdownBtn3")
+    const dropdown3 = document.querySelector("#dropdown3")
+    const dropdownBtn4 = document.querySelector("#dropdownBtn4")
+    const dropdown4 = document.querySelector("#dropdown4")
+
+    const themeToggle = document.querySelector("#themeToggle")
+    const sun = document.querySelector("#sun")
+    const moon = document.querySelector("#moon")
+    const navbar = document.querySelector("#navbar")
+    const themeBox = document.querySelectorAll(".themeBox")
+    const dropDownElement = document.querySelectorAll(".dropDownElement")
+    const menuItem = document.querySelectorAll("#menu")
+
+    themeToggle.addEventListener('click', () => {
+      // light mode setting
+      if (moon.classList.contains('hidden')) {
+        moon.classList.remove('hidden')
+        sun.classList.add('hidden')
+
+        navbar.classList.replace("bg-gray-900", "bg-gray-100")
+        navbar.classList.replace("text-gray-400", "text-black")
+
+        for (const box of themeBox) {
+          box.classList.replace("text-gray-100", "text-black")
+          box.classList.replace("hover:bg-gray-800", "hover:bg-gray-200")
+        }
+
+        for (const dropdown of dropDownElement) {
+          dropdown.classList.replace("bg-gray-800", "bg-gray-200")
+        }
+
+        for (const menu of menuItem) {
+          menu.classList.replace("text-gray-100", "text-black")
+          menu.classList.replace("hover:bg-gray-700", "hover:bg-gray-300")
+        }
+
+
+      }
+      // dark mode setting
+      else {
+        sun.classList.remove('hidden')
+        moon.classList.add('hidden')
+
+        navbar.classList.replace("bg-gray-100", "bg-gray-900")
+        navbar.classList.replace("text-black", "text-gray-400")
+
+        for (const box of themeBox) {
+          box.classList.replace("text-black", "text-gray-100")
+          box.classList.replace("hover:bg-gray-200", "hover:bg-gray-800")
+        }
+
+        for (const dropdown of dropDownElement) {
+          dropdown.classList.replace("bg-gray-200", "bg-gray-800")
+        }
+
+        for (const menu of menuItem) {
+          menu.classList.replace("text-black", "text-gray-100")
+          menu.classList.replace("hover:bg-gray-300", "hover:bg-gray-700")
+
+        }
+
+      }
+    })
+
+    window.addEventListener('DOMContentLoaded', () => {
+
+        dropdownBtn1.addEventListener('click', () => {
+            if (dropdown1.classList.contains('hidden')) {
+                dropdown1.classList.remove('hidden')
+                // dropdown.classList.add('flex')
+            } else {
+              dropdown1.classList.add('hidden')
+            }
+        })
+        dropdownBtn2.addEventListener('click', () => {
+            if (dropdown2.classList.contains('hidden')) {
+                dropdown2.classList.remove('hidden')
+                // dropdown.classList.add('flex')
+            } else {
+              dropdown2.classList.add('hidden')
+            }
+        })
+        dropdownBtn3.addEventListener('click', () => {
+            if (dropdown3.classList.contains('hidden')) {
+                dropdown3.classList.remove('hidden')
+                // dropdown.classList.add('flex')
+            } else {
+              dropdown3.classList.add('hidden')
+            }
+        })
+        dropdownBtn4.addEventListener('click', () => {
+            if (dropdown4.classList.contains('hidden')) {
+                dropdown4.classList.remove('hidden')
+                // dropdown.classList.add('flex')
+            } else {
+              dropdown4.classList.add('hidden')
+            }
+        })
+
+    })
+</script>
+</html>
