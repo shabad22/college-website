@@ -182,8 +182,8 @@
     </div>
   </header>
 </body>
-<!-- <script>
-  const dropdownBtn1 = document.querySelector("#dropdownBtn1")
+<script>
+    const dropdownBtn1 = document.querySelector("#dropdownBtn1")
     const dropdown1 = document.querySelector("#dropdown1")
     const dropdownBtn2 = document.querySelector("#dropdownBtn2")
     const dropdown2 = document.querySelector("#dropdown2")
@@ -191,65 +191,6 @@
     const dropdown3 = document.querySelector("#dropdown3")
     const dropdownBtn4 = document.querySelector("#dropdownBtn4")
     const dropdown4 = document.querySelector("#dropdown4")
-
-    const themeToggle = document.querySelector("#themeToggle")
-    const sun = document.querySelector("#sun")
-    const moon = document.querySelector("#moon")
-    const navbar = document.querySelector("#navbar")
-    const themeBox = document.querySelectorAll(".themeBox")
-    const dropDownElement = document.querySelectorAll(".dropDownElement")
-    const menuItem = document.querySelectorAll("#menu")
-
-    themeToggle.addEventListener('click', () => {
-      // light mode setting
-      if (moon.classList.contains('hidden')) {
-        moon.classList.remove('hidden')
-        sun.classList.add('hidden')
-
-        navbar.classList.replace("bg-gray-900", "bg-gray-100")
-        navbar.classList.replace("text-gray-400", "text-black")
-
-        for (const box of themeBox) {
-          box.classList.replace("text-gray-100", "text-black")
-          box.classList.replace("hover:bg-gray-800", "hover:bg-gray-200")
-        }
-
-        for (const dropdown of dropDownElement) {
-          dropdown.classList.replace("bg-gray-800", "bg-gray-200")
-        }
-
-        for (const menu of menuItem) {
-          menu.classList.replace("text-gray-100", "text-black")
-          menu.classList.replace("hover:bg-gray-700", "hover:bg-gray-300")
-        }
-
-
-      }
-      // dark mode setting
-      else {
-        sun.classList.remove('hidden')
-        moon.classList.add('hidden')
-
-        navbar.classList.replace("bg-gray-100", "bg-gray-900")
-        navbar.classList.replace("text-black", "text-gray-400")
-
-        for (const box of themeBox) {
-          box.classList.replace("text-black", "text-gray-100")
-          box.classList.replace("hover:bg-gray-200", "hover:bg-gray-800")
-        }
-
-        for (const dropdown of dropDownElement) {
-          dropdown.classList.replace("bg-gray-200", "bg-gray-800")
-        }
-
-        for (const menu of menuItem) {
-          menu.classList.replace("text-black", "text-gray-100")
-          menu.classList.replace("hover:bg-gray-300", "hover:bg-gray-700")
-
-        }
-
-      }
-    })
 
     window.addEventListener('DOMContentLoaded', () => {
 
@@ -287,5 +228,5 @@
         })
 
     })
-</script> -->
+</script>
 </html>
